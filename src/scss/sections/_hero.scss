@@ -1,0 +1,59 @@
+@import '../helpers/variables';
+
+.hero {
+  background: url('../assets/img/bg_hero.jpg') no-repeat center -90px / cover;
+  height: 820px;
+  width: 100%;
+  font-size: $main-fs;
+
+  &.light-theme-section {
+    background-image: url('../assets/img/bg_hero_light.jpg');
+    background-size: cover;
+  }
+
+  & .container {
+    padding-left: 60px;
+  }
+
+  &__name {
+    font-family: $sub-font;
+    font-weight: bold;
+    font-size: $huge-fs;
+    padding-top: 160px;
+    margin-bottom: 10px;
+    line-height: 120px;
+  }
+
+  &__description {
+    font-family: $main-font;
+    line-height: 40px;
+    max-width: 470px;
+    margin-bottom: 25px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    background-size: auto 620px;
+    height: 505px;
+
+    & .container {
+      padding-left: 0;
+    }
+
+    &__name {
+      font-size: 31px;
+      padding-top: 80px;
+      line-height: 60px;
+      margin-bottom: 23px;
+    }
+
+    &__description {
+      font-family: 'Inter', sans-serif;
+      line-height: 24px;
+      max-width: 427px;
+      margin-bottom: 58px;
+    }
+  }
+}

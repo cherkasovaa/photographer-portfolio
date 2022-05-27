@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <svg class="icon logo__icon">
+            <use xlink:href="./assets/svg/sprite.svg#logo"></use>
+          </svg>
+        </div>
+        <nav class="navigation">
+          <div class="burger-menu">
+            <span class="burger-menu__item"></span>
+          </div>
+
+          <ul class="navigation__list list">
+            <li class="navigation__item"><a href="#skills" class="navigation__link" data-i18Obj="skills">Skills</a></li>
+            <li class="navigation__item"><a href="#portfolio" class="navigation__link" data-i18Obj="portfolio">Portfolio</a></li>
+            <li class="navigation__item"><a href="#video" class="navigation__link" data-i18Obj="video">Video</a></li>
+            <li class="navigation__item"><a href="#price" class="navigation__link" data-i18Obj="price">Price</a></li>
+            <li class="navigation__item"><a href="#contacts" class="navigation__link" data-i18Obj="contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="switch-language list">
+          <span class="switch-language__item"><a href="#" id="en" class="switch-language__btn check">en</a></span>
+          <span class="switch-language__item"><a href="#" id="ru" class="switch-language__btn">ru</a></span>
+        </div>
+
+        <button class="switch-theme"></button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__name" data-i18Obj="hero-title">Alexa Rise</h1>
+          <p class="hero__description" data-i18Obj="hero-text">
+            Save sincere emotions, romantic feelings and happy moments of life together with professional photographer
+            Alexa Rise
+          </p>
+          <button class="btn" data-i18Obj="hire">Hire me</button>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="title" data-i18Obj="skills">Skills</h2>
+          </div>
+          <div class="skills-items">
+            <div class="skills-item">
+              <img src="./assets/img/skills/camera.png" alt="camera icon" class="skills-item__img" />
+              <h3 class="skills-item__title" data-i18Obj="skill-title-1">Digital photography</h3>
+              <p class="skills-item__description" data-i18Obj="skill-text-1">High-quality photos in the studio and on the nature</p>
+            </div>
+            <div class="skills-item">
+              <img src="./assets/img/skills/video.png" alt="video icon" class="skills-item__img" />
+              <h3 class="skills-item__title" data-i18Obj="skill-title-2">Video shooting</h3>
+              <p class="skills-item__description" data-i18Obj="skill-text-2">Capture your moments so that they always stay with you</p>
+            </div>
+            <div class="skills-item">
+              <img src="./assets/img/skills/picture.png" alt="picture icon" class="skills-item__img" />
+              <h3 class="skills-item__title" data-i18Obj="skill-title-3">Retouch</h3>
+              <p class="skills-item__description" data-i18Obj="skill-text-3">I strive to make photography surpass reality</p>
+            </div>
+            <div class="skills-item">
+              <img src="./assets/img/skills/mic.png" alt="microphone icon" class="skills-item__img" />
+              <h3 class="skills-item__title" data-i18Obj="skill-title-4">Audio</h3>
+              <p class="skills-item__description" data-i18Obj="skill-text-4">Professional sounds recording for video, advertising, portfolio</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="title" data-i18Obj="portfolio">Portfolio</h2>
+          </div>
+
+          <div class="portfolio-btns">
+            <button id="winter" class="btn btn_portfolio btn_transparent active" data-i18Obj="winter">Winter</button>
+            <button id="spring" class="btn btn_portfolio btn_transparent" data-i18Obj="spring">Spring</button>
+            <button id="summer" class="btn btn_portfolio btn_transparent" data-i18Obj="summer">Summer</button>
+            <button id="autumn" class="btn btn_portfolio btn_transparent" data-i18Obj="autumn">Autumn</button>
+          </div>
+
+          <div id="winter" class="portfolio-items"></div>
+        </div>
+      </section>
+
+      <section id="video" class="video">
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="title" data-i18Obj="video">Video</h2>
+          </div>
+        </div>
+        <div class="video-player">
+          <img src="./assets/img/video/video-player.jpg" alt="video screen" class="video-player__img" />
+          <button class="video-player__btn"></button>
+        </div>
+      </section>
+
+      <section id="price" class="price">
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="title" data-i18Obj="price">Price</h2>
+          </div>
+
+          <div class="price-items">
+            <div class="price-item">
+              <h3 class="price-item__title">Standart</h3>
+              <p class="price-item__price">500 <span>$</span></p>
+              <div class="price-item__description-list">
+                <p class="price-item__description-item" data-i18Obj="price-description-1-span-1">One location</p>
+                <p class="price-item__description-item" data-i18Obj="price-description-1-span-2">120 photos in color</p>
+                <p class="price-item__description-item" data-i18Obj="price-description-1-span-3">12 photos in retouch</p>
+                <p class="price-item__description-item" data-i18Obj="price-description-1-span-4">Readiness 2-3 weeks</p>
+                <p class="price-item__description-item" data-i18Obj="price-description-1-span-5">Make up, visage</p>
+              </div>
+              <button class="btn" data-i18Obj="order">Order shooting</button>
+            </div>
+            <div class="price-item">
+              <h3 class="price-item__title">Premium</h3>
+              <p class="price-item__price">700 <span>$</span></p>
+              <div class="price-item__description-list">
+                <p class="price-item__description-item" data-i18Obj="price-description-2-span-1">One or two locations</p>
+                <p class="price-item__description-item" data-i18Obj="price-description-2-span-2">200 photos in color</p>
+                <p class="price-item__description-item" data-i18Obj="price-description-2-span-3">20 photos in retouch</p>
+                <p class="price-item__description-item" data-i18Obj="price-description-2-span-4">Readiness 1-2 weeks</p>
+                <p class="price-item__description-item" data-i18Obj="price-description-2-span-5">Make up, visage</p>
+              </div>
+              <button class="btn" data-i18Obj="order">Order shooting</button>
+            </div>
+            <div class="price-item">
+              <h3 class="price-item__title">Gold</h3>
+              <p class="price-item__price">1000 <span>$</span></p>
+              <div class="price-item__description-list">
+                <p class="price-item__description-item" data-i18Obj="price-description-3-span-1">Three locations or more</p>
+                <p class="price-item__description-item" data-i18Obj="price-description-3-span-2">300 photos in color</p>
+                <p class="price-item__description-item" data-i18Obj="price-description-3-span-3">50 photos in retouch</p>
+                <p class="price-item__description-item" data-i18Obj="price-description-3-span-4">Readiness 1 week</p>
+                <p class="price-item__description-item" data-i18Obj="price-description-3-span-5">Make up, visage, hairstyle</p>
+              </div>
+              <button class="btn" data-i18Obj="order">Order shooting</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts">
+        <div class="container">
+          <form action="#" method="post" class="contact-form">
+            <h2 class="contact-form__title" data-i18Obj="contact-me">Contact me</h2>
+            <input class="contact-form__item" type="email" name="mail" placeholder="E-mail" />
+            <input class="contact-form__item" type="tel" name="phone" placeholder="Phone" />
+            <textarea
+              class="contact-form__item contact-form__message"
+              name="message"
+              cols="30"
+              rows="3"
+              placeholder="Message"
+            ></textarea>
+            <button class="btn contact-form__btn" data-i18Obj="send-message">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__list">
+          <div class="footer__item">
+            <span class="copyright">©</span><span class="year">2022</span
+            ><a class="github" href="https://github.com/cherkasovaa">github</a>
+          </div>
+          <div class="footer__item">
+            <a href="https://rs.school/js-stage0/" class="rsschool">Rolling Scopes School</a>
+          </div>
+          <div class="footer__item">
+            <ul class="socials">
+              <li class="socials__items">
+                <a href="https://www.instagram.com/" class="socials__link">
+                  <svg class="icon socials__icon">
+                    <use xlink:href="./assets/svg/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__items">
+                <a href="https://www.facebook.com/" class="socials__link">
+                  <svg class="icon socials__icon">
+                    <use xlink:href="./assets/svg/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__items">
+                <a href="https://twitter.com/" class="socials__link">
+                  <svg class="icon socials__icon">
+                    <use xlink:href="./assets/svg/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__items">
+                <a href="https://www.pinterest.com/" class="socials__link">
+                  <svg class="icon socials__icon">
+                    <use xlink:href="./assets/svg/sprite.svg#pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

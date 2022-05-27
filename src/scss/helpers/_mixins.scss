@@ -1,0 +1,30 @@
+@import './variables';
+@import './extends';
+
+
+@mixin button($text, $text-hover, $bg, $border){
+	@extend .transition;
+
+	font-family: inherit;
+	font-size: $main-fs;
+	padding: 15px 20px;
+	width: 220px;
+	color: $text;
+	background: $bg;
+	border: 1px solid $border;
+	cursor: pointer;
+
+	&.light-theme {
+		color: $background;
+		background: $white;
+
+		&:hover {
+			color: $hover;
+			background: $background;
+		}
+	}
+
+	&:hover {
+		color: $text-hover;
+	}
+}
