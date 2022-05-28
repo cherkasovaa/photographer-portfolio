@@ -1,4 +1,6 @@
-import i18Obj from './translate.js';
+import '../scss/main.scss';
+
+import i18Obj from './translate';
 
 const burgerMenu = document.querySelector('.burger-menu');
 const menu = document.querySelector('.navigation__list');
